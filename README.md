@@ -17,4 +17,4 @@ the points using each possible camera pose and using **chirality condition** det
 
 3. **Triangulation**: Once we have the pose of the current image, we triangulate matched features whose world points are not known. Initial estimate from the DLT algorithm is used to further refine the world points using LM algorithm.
 
-4. **Bundle Adjustment**: Finally the camera pose and the world points related to the current image are jointly optimised using LM algorithm.
+4. **Bundle Adjustment**: Finally the camera pose and the world points related to the current image are jointly optimised using LM algorithm. Then for each new image steps 2-4 is repeated.
