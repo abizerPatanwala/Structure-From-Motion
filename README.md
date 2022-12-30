@@ -19,3 +19,6 @@ the points using each possible camera pose and using **chirality condition** det
 3. **Triangulation**: Once we have the pose of the current image, we triangulate matched features whose world points are not known. Initial estimate from the DLT algorithm is used to further refine the world points using LM algorithm.
 
 4. **Bundle Adjustment**: Finally the camera pose and the world points related to the current image are jointly optimised using LM algorithm. Then for each new image steps 2-4 is repeated.
+
+## Setup
+Download all .py files in the same folder. Download the images from *P3Data* in a folder with same name, in the directory of .py files. On Ubuntu terminal run `python3 main.py` which runs SFM and generates a file named *world_pts.txt*, which contains the world points from SFM. Then run `plot.py` to visualise the  projection of world points of the scene observed from top view.   
