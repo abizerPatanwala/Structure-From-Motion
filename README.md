@@ -13,7 +13,7 @@ But even for that an initial estimate is required, which comes from DLT. In this
 **Essential Matrix** is extracted from Fundamental Matrix and we get 4 possible camera poses from esential Matrix. To get the correct pose, we **triangulate**
 the points using each possible camera pose and using **chirality condition** determine the correct pose. The correct pose is the one, which has maximum points in fron of it.
 
-2. **Perspective N Point(PnP)**: Once we have, initial poses and map, for calculating further poses we use PnP algorithm. For each new image, we match it with previous *n* images and find the world points associated with current image. Then using PnP we calculate the pose of the current image using DLT. Using this initial estimate of the pose, the pose is further refined using *Levenberg–Marquard(LM)* algorithm.
+2. **Perspective N Point(PnP)**: Once we have, initial poses and map, for calculating further poses we use PnP algorithm. For each new image, we match it with previous *n* images and find the world points associated with current image. Then using PnP we calculate the pose of the current image using DLT. Using this initial estimate of the pose, the pose is further refined using **Levenberg–Marquard(LM)** algorithm.
 
 3. **Triangulation**: Once we have the pose of the current image, we triangulate matched features whose world points are not known. Initial estimate from the DLT algorithm is used to further refine the world points using LM algorithm.
 
