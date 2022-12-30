@@ -3,7 +3,7 @@
 
 [^1]: The input images, camera parameters and matching.txt files in the *P3Data* folder was provided by [Professor Nitin Sanket](https://github.com/nitinjsanket/) as part of RBE 549:Computer Vision graduate course from RBE department of Worcester Polytechnic Institute(WPI). 
 
-This project implements **Strucutre from Motion(SFM)** for 5 input images in the *P3Data* folder. The input images are already distortion corrected. *Caliberation*
+[^1]This project implements **Strucutre from Motion(SFM)** for 5 input images in the *P3Data* folder. The input images are already distortion corrected. *Caliberation*
 folder contains *cameraParams.mat* file which has camera parameters. *output* folder contains output images from various stages of structure from motion.
 *points.png* file visualizes the projection of world points of the scene observed from top view.
 
